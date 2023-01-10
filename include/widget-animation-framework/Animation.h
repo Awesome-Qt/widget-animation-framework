@@ -18,8 +18,9 @@
 #ifndef ANIMATION_H
 #define ANIMATION_H
 
+#include <widget-animation-framework/widget-animation-framework_export.hpp>
+
 #include "WAF.h"
-#include "widget-animation-framework/widget-animation-framework_export.hpp"
 
 class QColor;
 class QPoint;
