@@ -11,6 +11,7 @@ project(
   LANGUAGES CXX
 )
 
+option(BUILD_EXAMPLE "Build the example" OFF)
 include(project-is-top-level)
 include(variables)
 include(link_qt)
@@ -92,4 +93,6 @@ target_include_directories(
 
 target_compile_features(widget-animation-framework PUBLIC cxx_std_17)
 
-add_subdirectory(example)
+if(BUILD_EXAMPLE)
+  add_subdirectory(example)
+endif()
