@@ -14,10 +14,27 @@ project(
 include(project-is-top-level)
 include(variables)
 include(link_qt)
+set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
 # ---- Declare library ----
 add_library(
   widget-animation-framework
+  source/Animation/Animation.cpp
+  source/Animation/CircleFill/CircleFillAnimator.cpp
+  source/Animation/CircleFill/CircleFillDecorator.cpp
+  source/Animation/Expand/ExpandAnimator.cpp
+  source/Animation/Expand/ExpandDecorator.cpp
+  source/Animation/SideSlide/SideSlideAnimator.cpp
+  source/Animation/SideSlide/SideSlideDecorator.cpp
+  source/Animation/Slide/SlideAnimator.cpp
+  source/Animation/Slide/SlideForegroundDecorator.cpp
+  source/StackedWidgetAnimation/StackedWidgetAnimation.cpp
+  source/StackedWidgetAnimation/StackedWidgetFadeIn/StackedWidgetFadeInAnimator.cpp
+  source/StackedWidgetAnimation/StackedWidgetFadeIn/StackedWidgetFadeInDecorator.cpp
+  source/StackedWidgetAnimation/StackedWidgetSlide/StackedWidgetSlideAnimator.cpp
+  source/StackedWidgetAnimation/StackedWidgetSlide/StackedWidgetSlideDecorator.cpp
+  source/StackedWidgetAnimation/StackedWidgetSlideOver/StackedWidgetSlideOverAnimator.cpp
+  source/StackedWidgetAnimation/StackedWidgetSlideOver/StackedWidgetSlideOverDecorator.cpp
   source/widget-animation-framework.cpp
 )
 add_library(widget-animation-framework::widget-animation-framework ALIAS widget-animation-framework)
