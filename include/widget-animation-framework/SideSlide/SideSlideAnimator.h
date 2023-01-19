@@ -3,7 +3,7 @@
 
 #include <widget-animation-framework/WAF.h>
 
-#include "../../AbstractAnimator.h"
+#include "widget-animation-framework/AbstractAnimator.h"
 
 class QPropertyAnimation;
 

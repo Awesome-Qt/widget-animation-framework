@@ -17,12 +17,12 @@
 
 #include "widget-animation-framework/Animation.h"
 
-#include "../AbstractAnimator.h"
 #include "AnimationPrivate.h"
 #include "CircleFill/CircleFillAnimator.h"
 #include "Expand/ExpandAnimator.h"
-#include "SideSlide/SideSlideAnimator.h"
 #include "Slide/SlideAnimator.h"
+#include "widget-animation-framework//SideSlide/SideSlideAnimator.h"
+#include "widget-animation-framework/AbstractAnimator.h"
 
 using WAF::AbstractAnimator;
 using WAF::Animation;

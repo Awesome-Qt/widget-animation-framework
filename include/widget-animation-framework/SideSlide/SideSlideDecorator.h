@@ -4,6 +4,8 @@
 #include <QTimeLine>
 #include <QWidget>
 
+#include <widget-animation-framework/widget-animation-framework_export.hpp>
+
 /**
  * Widgets Animation Framework
  */

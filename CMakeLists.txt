@@ -36,14 +36,12 @@ add_library(
   source/StackedWidgetAnimation/StackedWidgetSlide/StackedWidgetSlideDecorator.cpp
   source/StackedWidgetAnimation/StackedWidgetSlideOver/StackedWidgetSlideOverAnimator.cpp
   source/StackedWidgetAnimation/StackedWidgetSlideOver/StackedWidgetSlideOverDecorator.cpp
-  source/AbstractAnimator.h
+  include/widget-animation-framework/AbstractAnimator.h
   source/Animation/AnimationPrivate.h
   source/Animation/CircleFill/CircleFillAnimator.h
   source/Animation/CircleFill/CircleFillDecorator.h
   source/Animation/Expand/ExpandAnimator.h
   source/Animation/Expand/ExpandDecorator.h
-  source/Animation/SideSlide/SideSlideAnimator.h
-  source/Animation/SideSlide/SideSlideDecorator.h
   source/Animation/Slide/SlideAnimator.h
   source/Animation/Slide/SlideForegroundDecorator.h
   source/StackedWidgetAnimation/StackedWidgetAnimationPrivate.h
@@ -53,6 +51,8 @@ add_library(
   source/StackedWidgetAnimation/StackedWidgetSlide/StackedWidgetSlideDecorator.h
   source/StackedWidgetAnimation/StackedWidgetSlideOver/StackedWidgetSlideOverAnimator.h
   source/StackedWidgetAnimation/StackedWidgetSlideOver/StackedWidgetSlideOverDecorator.h
+  include/widget-animation-framework/SideSlide/SideSlideAnimator.h
+  include/widget-animation-framework/SideSlide/SideSlideDecorator.h
 )
 add_library(widget-animation-framework::widget-animation-framework ALIAS widget-animation-framework)
 target_link_libraries(widget-animation-framework PRIVATE ${QT_LIBRARIES})

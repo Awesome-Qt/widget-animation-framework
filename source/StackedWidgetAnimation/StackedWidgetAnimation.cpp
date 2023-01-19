@@ -17,11 +17,11 @@
 
 #include "widget-animation-framework/StackedWidgetAnimation.h"
 
-#include "../AbstractAnimator.h"
 #include "StackedWidgetAnimationPrivate.h"
 #include "StackedWidgetFadeIn/StackedWidgetFadeInAnimator.h"
 #include "StackedWidgetSlide/StackedWidgetSlideAnimator.h"
 #include "StackedWidgetSlideOver/StackedWidgetSlideOverAnimator.h"
+#include "widget-animation-framework/AbstractAnimator.h"
 
 using WAF::AbstractAnimator;
 using WAF::StackedWidgetAnimation;
