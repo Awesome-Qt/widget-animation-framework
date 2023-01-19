@@ -17,7 +17,8 @@ class SideSlideDecorator;
 /**
  * @brief Аниматор выдвижения виджета из-за стороны приложения
  */
-class SideSlideAnimator : public AbstractAnimator
+class WIDGET_ANIMATION_FRAMEWORK_EXPORT SideSlideAnimator
+    : public AbstractAnimator
 {
   Q_OBJECT
 
